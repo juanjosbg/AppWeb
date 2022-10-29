@@ -29,6 +29,7 @@ function Navbar() {
                 <div className='burgger'>
                     <BurgerButton clicked={clicked} handleClik={handleClik} />
                 </div>
+                
                 <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
             </NavContainer>
         </>
