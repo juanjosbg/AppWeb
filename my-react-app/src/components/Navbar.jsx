@@ -69,6 +69,8 @@ const NavContainer = styled.nav`
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        display: flex;
+        align-items: center;
 
         transition: all .5s ease;
 
