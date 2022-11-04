@@ -118,7 +118,7 @@ const ContCards = styled.div`
     border: none;
 }
 .card:hover{
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .card-title{
