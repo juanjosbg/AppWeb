@@ -17,6 +17,9 @@ function Navbar() {
         <>
             <NavContainer>
                 <h2>Navbar <span>Responsive</span></h2>
+                <div>
+                <img class="avatar-img rounded-1" src="https://www.bibliovalle.gov.co/portal/templates/bibliotecadepartamental/images/logo.jpg" alt="avatar" />
+                </div>
 
                 {/* for setting true ore false as cliked */}
                 <div className={`linksNav ${clicked ? 'active' : ''}`}>
@@ -47,7 +50,8 @@ const NavContainer = styled.nav`
         }
     }
     padding: .4rem;
-    background-color: #333;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
     display:flex;
     aling-items:center;
     justify-content: space-between;
@@ -75,7 +79,7 @@ const NavContainer = styled.nav`
         transition: all .5s ease;
 
         a{
-            color: #fff;
+            color: #000;
             font-size: 2rem;
             display: block;
         }
@@ -106,7 +110,7 @@ const NavContainer = styled.nav`
         a{
             font-size: 2rem;
             margin-top: 1rem;
-            color: #fff;
+            color: #000;
         }
         
     }
