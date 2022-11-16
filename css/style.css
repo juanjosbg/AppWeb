@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================= */
+/* Paleta de colores */
+/* ======================================= */
+:root {
+
+    --Red1: #CF0A0A;
+    --Red2: #D2001A;
+    --Red3: #EB1D36;
+    --Red4: #B22727;
+    --Red5: #8E0505;
+    --Red6: #AF2D2D;
+
+    --Azul1: #214252;
+    --Azul2: #30475E;
+    --Azul3: #407088;
+    --Azul4: #145374;
+    --Azul5: #005874;
+
+    --gris1: #AAAAAA;
+    --gris2: #B2B2B2;
+    --gris3: #D8D9CF;
+    --gris4: #D8D8D8;
+    --gris5: #E7E6E1;
+}
+
+
+/* ======================================= */
+/* Definición del texto */
+/* ======================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    line-height: 6vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    font-family: 'IBM Plex Sans', 'sans-serif';
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/* ======================================= */
+/* Nav */
+/* ======================================= */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.LogNav {
+    max-width: 70%;
+    object-fit: cover;
+}
+
+.form-control {
+    padding: 0.375rem 2.75rem;
+}
+
+/* 2 Nav */
+#mainnav ul {
+    padding-left: 1em;
+    position: fixed;
+    bottom: 0;
+    font-weight: 400;
+    z-index: 100;
+    min-width: 20em;
+}
+
+#mainnav li {
+    list-style: none;
+    margin: .5em 0 0;
+    font-size: 1.75em;
+}
+
+#mainnav li:hover span {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+#mainnav li.invisible {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s;
+}
+
+#mainnav li.animate {
+    opacity: 0;
+    animation-duration: 0.25s;
+    animation-name: easeOutBounce;
+    animation-fill-mode: forwards;
+}
+
+#mainnav li.animate:nth-child(4) {
+    animation-delay: 0s;
+}
+
+#mainnav li.animate:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+#mainnav li.animate:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+#mainnav li.animate:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+#mainnav a {
+    text-decoration: none;
+    color: #73777B;
+}
+
+#mainnav i {
+    border: 2px solid var(--Red5);
+    padding: .5em;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#mainnav i:hover {
+    border: 2px solid #BBBFCA;
+    padding: .5em;
+    border-radius: 50%;
+    box-shadow: #D3E0EA 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#mainnav span {
+    color: #BBBFCA;
+    padding: .35em;
+    margin-left: .5em;
+    border-radius: .2em;
+    font-size: .75em;
+    transition: .3s;
+    opacity: 0;
+    position: relative;
+}
+
+#mainnav span:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -.4em;
+    top: 50%;
+    margin-top: -.5em;
+    border-style: solid;
+    border-width: .5em .5em .5em 0;
+    border-color: transparent #ffff transparent transparent;
+}
+
+/* Imitates jQuery UI's ease-out-bounce animation effect */
+@keyframes easeOutBounce {
+    0% {
+        font-size: 0;
+    }
+
+    37% {
+        font-size: 1.75em;
+    }
+
+    55% {
+        font-size: 1.3125em;
+    }
+
+    73% {
+        font-size: 1.75em;
+    }
+
+    82% {
+        font-size: 1.6275em;
+    }
+
+    91% {
+        font-size: 1.75em;
+    }
+
+    96% {
+        font-size: 1.715em;
+    }
+
+    100% {
+        font-size: 1.75em;
+        opacity: 1;
+    }
+}
+
+/* ======================================= */
+/* Carrusel */
+/* ======================================= */
+.car-img {
+    width: 100%;
+}
+
+.car-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-left: 6px;
+}
+
+/* ======================================= */
+/* Cont */
+/* ======================================= */
+.bg-gray-cont {
+    background: #f3f6ff !important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.subtitle {
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #072642;
+    font-weight: bold;
+}
+
+.text-secondary {
+    color: var(--Red1);
+}
+
+.text-secondary span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.bg-primary-light {
+    background: rgba(115, 200, 211, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.icon-rounded {
+    display: inline-block;
+    width: 100%;
+    height: 9rem;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.px-cont {
+    position: relative;
+    width: 100%;
+}
+
+.px-cont img {
+    display: block;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    margin-top: -5vh;
+    border: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cont-text-space {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sep-cont {
+    border-bottom: 2.5px solid rgb(255, 94, 0);
+    width: 15%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.text-p {
+    line-height: 1.4rem;
+    color: #112B3C;
+    text-align: left;
+}
+
+.color-text-a {
+    color: #71111c;
+}
+
+.color-text-b {
+    color: #1e9120;
+}
+
+.color-text-c {
+    color: #209bcf;
+}
+
+/* ======================================= */
+/*  */
+/* ======================================= */
+
+
+/* ======================================= */
+/* Footer */
+/* ======================================= */
+.foo-information {
+    position: relative;
+    width: 48%;
+    height: 60%;
+    background: #ffffffd9;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    top: 50vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px;
+}
+
+.subinfo1 h5 {
+    text-align: left;
+    margin-bottom: -2px;
+    font-size: 22px;
+    color: var(--Red5);
+}
+
+.iconCont {
+    margin-right: 15px;
+    color: #D2001A;
+}
+
+.refCont {
+    text-decoration: none;
+    list-style: none;
+    color: #B2B2B2;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: initial;
+}
+
+.sepCont{
+    border-bottom: 3px solid #D8D9CF;
+    width: 15%;
+    display: block;
+    margin: 25px 0;
+    margin-bottom: 2vh;
+}
+.cont-Footer {
+    background-color: #71111c;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+    padding: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 1400px) {
+    .foo-information {
+        top: 53vh;
+    }
+}
