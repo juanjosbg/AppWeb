@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spacio Makerlab || Biblioteca Departamental</title>
 
     <!-- CSS Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,8 +23,10 @@
         <header>
             <nav class="navbar">
                 <div class="container">
-                    <img src="https://www.bibliovalle.gov.co/portal/templates/bibliotecadepartamental/images/logo.jpg"
-                        class="LogNav" alt="Bootstrap">
+                    <a href="/">
+                        <img src="https://www.bibliovalle.gov.co/portal/templates/bibliotecadepartamental/images/logo.jpg"
+                            class="LogNav" alt="Bootstrap">
+                    </a>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -34,10 +36,11 @@
 
             <nav id="mainnav" role="navigation">
                 <ul>
-                    <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li><a href="#"><i class="fa fa-smile-o"></i><span>About</span></a></li>
-                    <li><a href="#"><i class="fa fa-globe"></i><span>Clients</span></a></li>
-                    <li><a href="#Footer"><i class="fa fa-envelope-o"></i><span>Contact Us</span></a></li>
+                    <li><a href="/"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#aboutsection"><i class="fa fa-smile-o"></i><span>About</span></a></li>
+                    <li><a href="https://www.bibliovalle.gov.co/" target="_blank"><i
+                                class="fa fa-globe"></i><span>Info</span></a></li>
+                    <li><a href="#aboutcontact"><i class="fa fa-envelope-o"></i><span>Contact Us</span></a></li>
                     <li><a href="#"><i class="fa fa-bars"></i></a></li>
                 </ul>
             </nav>
@@ -96,10 +99,8 @@
                     <div class="col-lg-4 mb-3 mb-lg-0 text-center">
                         <div class="px-0 px-lg-3">
                             <div class="icon-rounded bg-primary-light mb-3 px-cont">
-                                <a href="#">
-                                    <img src="https://images.unsplash.com/photo-1518732714860-b62714ce0c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                                        alt="">
-                                </a>
+                                <img src="https://images.unsplash.com/photo-1518732714860-b62714ce0c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                                    alt="">
                             </div>
                             <h3 class="cont-text-space color-text-a">Impresi&oacute;n 3D</h3>
                             <div class="sep-cont"></div>
@@ -112,12 +113,10 @@
                     <div class="col-lg-4 mb-3 mb-lg-0">
                         <div class="px-0 px-lg-3">
                             <div class="icon-rounded bg-primary-light mb-3 px-cont">
-                                <a href="#">
-                                    <img src="https://images.unsplash.com/photo-1527612820672-5b56351f7346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                        alt="">
-                                </a>
+                                <img src="https://images.unsplash.com/photo-1527612820672-5b56351f7346?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    alt="">
                             </div>
-                            <h3 class="cont-text-space color-text-b">Impresi&oacute;n 3D</h3>
+                            <h3 class="cont-text-space color-text-b">Rob&oacute;tica</h3>
                             <div class="sep-cont"></div>
                             <p class="text-p">Espacio destinado para impartir clases de distintas áreas relacionadas con
                                 las Tecnologías de a información.</p>
@@ -127,10 +126,8 @@
                     <div class="col-lg-4 mb-3 mb-lg-0 text-center">
                         <div class="px-0 px-lg-3">
                             <div class="icon-rounded bg-primary-light mb-3 px-cont">
-                                <a href="#">
-                                    <img src="https://images.unsplash.com/photo-1585172080917-562974114ef6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBqdWVnb3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
-                                        alt="">
-                                </a>
+                                <img src="https://images.unsplash.com/photo-1585172080917-562974114ef6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBqdWVnb3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                                    alt="">
                             </div>
 
                             <h3 class="cont-text-space color-text-c">Video juegos</h3>
@@ -141,10 +138,169 @@
                     </div>
                 </div>
             </div>
+            <!-- line sep -->
+            <div class="line-sep"></div>
+            <!-- Info Videos -->
+            <div class="container pb-sm-1 pb-md-3" id="aboutsection">
+                <!-- Row 1 -->
+                <div class="row align-items-lg-center pb-5 mb-2 mb-lg-4 mb-xl-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xYO7BZG1g9g"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ps-xl-5 ms-md-2 ms-lg-4">
+                            <h2 class="h1 mb-3 mb-sm-4 text-uppercase">¿Que es un maker space?</h2>
+                            <p class="mb-4 mb-lg-5">Un makerspace es un lugar físico donde la gente se reúne
+                                para compartir recursos y conocimientos, trabajar en proyectos,
+                                crear redes y construir.
+                            </p>
+                            <a href="https://www.bibliovalle.gov.co/portal/sala-multimedia" target="_blank"
+                                class="btn btn-lg btn-primary shadow-primary">Conocer m&aacute;s</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Row 2 -->
+                <div class="row align-items-lg-center pt-md-3 pb-5 mb-2 mb-lg-4 mb-xl-5">
+                    <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                        <iframe width="560" height="400" src="https://www.youtube.com/embed/8EAHdV5Kno0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="pe-xl-5 me-md-2 me-lg-4">
+                            <h2 class="h1 mb-3 mb-sm-4 text-uppercase">¿Como el maker space promueve el desarrollo de una
+                                comunidad?</h2>
+                            <p class="mb-3 mb-sm-4">
+                                Es un espacio físico de colaboración abierta donde las personas tienen acceso a recursos,
+                                conocimiento, conexiones profesionales y herramientas que comparten para trabajar en sus
+                                proyectos con la finalidad de crear productos o servicios.
+                            </p>
+    
+                            <p>
+                                Cada <span class="fw-bolder fst-italic">Maker Space</span> es diferente,
+                                pues los espacios se adaptan según su propósito.
+                            </p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex mb-2" style="align-items: center;">
+                                    <i class="fa fa-thumbs-o-up text-primary lead me-2"> </i>
+                                    Genera capital social
+                                </li>
+                                <li class="d-flex mb-2" style="align-items: center;">
+                                    <i class="fa fa-thumbs-o-up text-primary lead me-2"> </i>
+                                    Promueve la innovación
+                                </li>
+                                <li class="d-flex mb-2" style="align-items: center;">
+                                    <i class="fa fa-thumbs-o-up text-primary lead me-2"> </i>
+                                    Brinda herramientas para tomar acción
+                                </li>
+                                <li class="d-flex mb-2" style="align-items: center;">
+                                    <i class="fa fa-thumbs-o-up text-primary lead me-2"> </i>
+                                    Permite escalar proyectos locales
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Row 3 -->
+                <div class="row align-items-lg-center pb-5 mb-2 mb-lg-4 mb-xl-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A3xhnD2yjss"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ps-xl-5 ms-md-2 ms-lg-4">
+                            <h2 class="h1 mb-3 mb-sm-4 text-uppercase">Introducion al Maker Space</h2>
+                            <p class="mb-4 mb-lg-5">
+                                Estos están basados en la filosofía del “hazlo tu mismo” o DIY
+                                (Do it yourself) y ponen a disposición de sus usuarios las herramientas necesarias para
+                                desarrollar cualquier tipo de proyecto. Las nuevas habilidades que permiten desarrollar
+                                estos lugares y su fácil adopción son factores que propician que sea implementadas
+                                en bibliotecas y colegios. En ellas la impresión 3D tiene un papel destacado.
+                            </p>
+                            <a href="https://www.bibliovalle.gov.co/portal/sala-multimedia" target="_blank"
+                                class="btn btn-lg btn-primary shadow-primary">Conocer m&aacute;s
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="container mt-5 pb-5 mb-3 mb-md-4 mb-lg-5 cont-infomation">
+            <h2 class="h1 text-center text-uppercase">Un espacio ideal para ti es cuando</h2>
+            <p class="text-center pb-1 pb-sm-0 mb-4 mb-sm-5">
+                Si lo puedes imaginar lo puedes lograr - <span class="fw-bolder fst-italic">Albert Einstein</span> 
+            </p>
+
+            <div class="row align-items-lg-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="pe-lg-4 pe-xl-5">
+                        <div class="text-center text-lg-end pb-2 mb-4 mb-xl-5">
+                            <img src="https://images.unsplash.com/photo-1552871444-956437c99b64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8OTM1NDg4Nnx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" 
+                                class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase text-lg-end">Diviertete</p>
+                        </div>
+
+                        <div class="text-center text-lg-end pb-2 mb-4 mb-xl-5">
+                            <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" 
+                                class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase text-lg-end">Comunica</p>
+                        </div>
+
+                        <div class="text-center text-lg-end">
+                            <img src="https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" 
+                                class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase text-lg-end">Explora</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="ratio ratio-1x1 border rounded-circle position-relative mx-auto border-img">
+                        <div class="p-5">
+                            <img src="/asset/11.jpg" class="rounded-circle" alt="Tooth">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="ps-lg-4 ps-xl-5">
+                        <div class="text-center text-lg-start pb-2 mb-4 mb-xl-5">
+                            <img src="https://images.unsplash.com/photo-1605627079912-97c3810a11a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=807&q=80" 
+                            class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase">Imagina</p>
+                        </div>
+
+                        <div class="text-center text-lg-start pb-2 mb-4 mb-xl-5">
+                            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGltYWdpbmF0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" 
+                                class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase">Crea</p>
+                        </div>
+
+                        <div class="text-center text-lg-start">
+                            <img src="https://universoabiertoblog.files.wordpress.com/2017/09/csm-faculty_prof_devel_tool_lending.jpg" 
+                            class="d-inline-block borderRadiousImg" alt="Icon">
+                            <p class="fs-sm mb-0 mt-2 text-primary text-uppercase text-lg-start">Innova</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer id="Footer">
+    <footer id="aboutcontact" class="aboutsection">
         <div class="foo-information">
             <div class="infoCont">
                 <h3>Contáctanos</h3>
